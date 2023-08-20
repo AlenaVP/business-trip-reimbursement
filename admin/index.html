@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Trip Reimbursement: admin page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form action="" class="form_admin">
+    <fieldset class="rates">
+      <legend>Daily allowance and mileage</legend>
+      <div>
+        <input type="range" id="allowance" name="allowance" min="0" max="30" value="15" step="1" />
+        <label for="allowance"><span class="allowance-value"></span> $/day for the daily allowance</label>
+      </div>
+
+      <div>
+        <input type="range" id="mileage" name="mileage" min="0" max="1" value="0.3" step=".1" />
+        <label for="mileage"><span class="mileage-value"></span> $/km for the car mileage</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="receipts">
+      <legend>Receipts</legend>
+      <table>
+        <tr class="receipt-row">
+          <td class="receipt-name">taxi</td>
+          <td class="edit"><button class="btn btn_admin btn_edit">Edit</button></td>
+          <td class="delete"><button class="btn btn_admin btn_delete">Delete</button></td>
+        </tr>
+        <tr class="receipt-row">
+          <td class="receipt-name">hotel</td>
+          <td class="edit"><button class="btn btn_admin btn_edit">Edit</button></td>
+          <td class="delete"><button class="btn btn_admin btn_delete">Delete</button></td>
+        </tr>
+        <tr class="receipt-row">
+          <td class="receipt-name">plane ticket</td>
+          <td class="edit"><button class="btn btn_admin btn_edit">Edit</button></td>
+          <td class="delete"><button class="btn btn_admin btn_delete">Delete</button></td>
+        </tr>
+        <tr class="receipt-row">
+          <td class="receipt-name">train</td>
+          <td class="edit"><button class="btn btn_admin btn_edit">Edit</button></td>
+          <td class="delete"><button class="btn btn_admin btn_delete">Delete</button></td>
+        </tr>
+        <tr class="receipt-row">
+          <td class="receipt-name"></td>
+          <td class="edit"><button class="btn btn_admin btn_edit">Add</button></td>
+          <td class="delete"><button class="btn btn_admin btn_delete" disabled>Delete</button></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset class="limits">
+      <legend>Limits</legend>
+      <div>
+        <input id="rtt" type="checkbox" name="limits" class="inline" value="rtt" />
+        <label for="rtt"> receipt type</label>
+      </div>
+
+      <div>
+        <input id="tlr" type="checkbox" name="limits" class="inline" value="tlr" />
+        <label for="tlr"> total reimbursement</label>
+      </div>
+
+      <div>
+        <input id="dis" type="checkbox" name="limits" class="inline" value="dis" />
+        <label for="dis"> distance</label>
+      </div>
+
+    </fieldset>
+
+    <button class="btn btn_admin btn_submit">Submit changes</button>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
