@@ -1,0 +1,15 @@
+@import "../style.css";
+
+.btn_calculate {
+  padding: 3px 12px;
+  width: fit-content;
+  min-width: 60px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: var(--color-light);
+  background-color: #3b3b4f;
+}
+
+.btn_calculate:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Trip Reimbursement: user page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form action="" class="form_user">
+    <fieldset class="trip-date">
+      <input type="date" id="trip-date" name="trip-date" required />
+      <label for="trip-date"> trip date</label>
+    </fieldset>
+
+    <fieldset class="receipts">
+      <select id="dropdown" name="dropdown">
+        <option value="">select one</option>
+        <option value="taxi">taxi</option>
+        <option value="hotel">hotel</option>
+        <option value="plane">plane ticket</option>
+        <option value="train">train</option>
+      </select>
+      <label for="dropdown"> receipts</label>
+    </fieldset>
+
+    <fieldset class="duration">
+      <input type="number" name="days-count" id="days-count" min="0" required />
+      <label for="days-count"> days count</label>
+    </fieldset>
+
+    <fieldset class="distance">
+      <legend>Reimbursement of car usage</legend>
+      <input type="number" name="km" id="km" min="0" />
+      <label for="km"> km</label>
+    </fieldset>
+
+    <button class="btn btn_calculate">Calculate</button>
+
+    <div class="total">Total reimbursement amount: <span class="total-value"></span></div>
+  </form>
+
+</body>
+
+</html>
