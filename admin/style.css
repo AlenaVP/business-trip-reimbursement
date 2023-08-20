@@ -1,4 +1,4 @@
-@import "../style.css";
+@import "../main/style.css";
 
 input[type="range"]::-webkit-slider-thumb {
   background-color: var(--color-darkblue);
